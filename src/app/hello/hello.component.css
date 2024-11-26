@@ -1,0 +1,38 @@
+/* hello.component.css */
+
+/* Estilo para o container da saudação */
+.greeting {
+    background-color: #f0f8ff; /* Cor de fundo suave */
+    border-radius: 8px;         /* Bordas arredondadas */
+    padding: 20px;              /* Espaçamento interno */
+    text-align: center;         /* Centraliza o texto */
+    max-width: 600px;           /* Define a largura máxima */
+    margin: 50px auto;          /* Centraliza o componente na tela */
+  }
+  
+  /* Estilo para o título de saudação */
+  .greeting-text {
+    font-size: 2rem;           /* Aumenta o tamanho da fonte */
+    color: #4caf50;            /* Cor verde */
+    font-weight: bold;         /* Deixa o texto em negrito */
+    margin-bottom: 10px;       /* Espaço abaixo do título */
+  }
+  
+  /* Estilo para a descrição do texto */
+  .description {
+    font-size: 1rem;           /* Tamanho de fonte menor */
+    color: #555;               /* Cor do texto em cinza */
+    line-height: 1.6;          /* Maior espaçamento entre as linhas */
+  }
+  
+  /* Efeito de hover para o título */
+  .greeting-text:hover {
+    color: #ff5722;            /* Muda a cor para laranja ao passar o mouse */
+    cursor: pointer;          /* Cursor de ponteiro para indicar interação */
+  }
+  
+  /* Adiciona um sombreamento ao container da saudação quando em foco */
+  .greeting:focus-within {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil ao focar */
+  }
+  
