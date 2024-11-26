@@ -1,11 +1,19 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-hello',
-  imports: [],
   templateUrl: './hello.component.html',
-  styleUrl: './hello.component.css'
+  styleUrls: ['./hello.component.css']
 })
 export class HelloComponent {
+  @Input() name: string = 'CDFs';  // Isso permite que 'name' seja passado de fora
 
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+  clicked (): void {
+    window.alert('Opa, você clicou!');
+ }
 }
